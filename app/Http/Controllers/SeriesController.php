@@ -13,14 +13,8 @@ class SeriesController extends Controller
             'tartarugas ninja'
         ];
 
-        $html = '<ul>';
-
-        foreach ($series as $s) {
-            $html .= "<li>$s</li>";
-        }
-
-        $html .= "</ul>";
-
-        return $html;
+        return view('listar-series', [
+            'series' => $series
+        ]);
     }
 }
