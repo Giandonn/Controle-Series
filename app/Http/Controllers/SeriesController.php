@@ -13,6 +13,6 @@ class SeriesController extends Controller
             'tartarugas ninja'
         ];
 
-        return view('listar-series')->with('series', $series);
+        return view('series.index')->with('series', $series);
     }
 }
