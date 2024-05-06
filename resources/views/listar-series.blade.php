@@ -9,9 +9,9 @@
     <h1>Séries</h1>
 
     <ul>
-        <?php foreach($series as $s): ?>
-        <li><?= $s; ?></li>
-        <?php endforeach; ?>
+        @foreach($series as $s)
+        <li>{{ $s }}</li>
+        @endforeach
     </ul>
 </body>
 </html>
